@@ -21,7 +21,7 @@ class C(ConsumerMixin):
 		print("###########Consumer2#########")
 		print("Data is ")
 		print(body)
-    	message.ack()
+		message.ack()
 
 # consumer mixin class more detail here 
 # http://docs.celeryproject.org/projects/kombu/en/latest/userguide/consumers.html?highlight=consumer

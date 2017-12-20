@@ -20,7 +20,7 @@ class C(ConsumerMixin):
 		print("###########Consumer1#########")
 		print("Data is ")
 		print(body)
-    	message.ack()
+		message.ack()
 
 data = settings()
 connection,exchange,task_queue1,task_queue2 = data.get_settings()
