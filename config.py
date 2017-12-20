@@ -12,9 +12,9 @@ class settings():
 		# second queue
 		self.task_queue2 = Queue(name ='queue2',exchange=self.direct_exchange, routing_key='tasks_queue2')
 		# Third queue
-		self.task_queue2 = Queue(name ='queue3',exchange=self.direct_exchange, routing_key='tasks_queue3')
+		self.task_queue3 = Queue(name ='queue3',exchange=self.direct_exchange, routing_key='tasks_queue3')
 		
 	def get_settings(self):
-		return[self.connection,self.direct_exchange,self.task_queue1,self.task_queue2]
+		return[self.connection,self.direct_exchange,self.task_queue1,self.task_queue2,self.task_queue3]
 
 
