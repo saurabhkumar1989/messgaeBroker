@@ -18,6 +18,7 @@ class C(ConsumerMixin):
 
     def on_task(self, body, message):
     	# when ever messgae received,this function calls
+		print("###########Consumer2#########")
     	print("Data is ")
     	print(body)
     	message.ack()
