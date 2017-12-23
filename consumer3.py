@@ -1,6 +1,6 @@
 from kombu.mixins import ConsumerMixin
 from config import settings
-
+from time import sleep
 # basic conumer - consume to queue 3
 
 
@@ -18,7 +18,7 @@ class C(ConsumerMixin):
 
     def on_task(self, body, message):
         # when ever messgae received,this function calls
-		sleep(.1)
+        sleep(.1)
         print("###########Consumer3#########")
         print("Data is ")
         print(body)
