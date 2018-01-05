@@ -20,3 +20,4 @@ How to run:
 1. Donload celery and give path to rabitmq DB
 2. Run the consumers  
 3. Run the producer and enjoy the show
+
